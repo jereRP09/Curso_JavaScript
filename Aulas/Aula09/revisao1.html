@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao1</title>
+</head>
+<style>
+    body{
+        background-color: #4B0082;
+        color:#fff;
+        font-size:18pt;
+        font-family: Arial;
+    }
+    h1{
+        font-size: 20pt;
+        font-family: Arial;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <h1>Calculadora</h1>
+    <script>
+        var n1=parseFloat(prompt(`Digite um número`))
+        var n2=parseFloat(prompt(`Digite outro número`))
+        soma=n1+n2
+        document.write(`Operações:Resultados`)
+        document.write(`</br> Adição:${soma}`)
+        sub=n1-n2
+        document.write(`</br> Subtração:${sub}`)
+        mult=n1*n2
+        document.write(`</br> Multiplicação:${mult}`)
+        div=n1/n2
+        document.write(`</br> Divisão:${div}`)
+        divInteira=n1%n2
+        document.write(`</br> Divisão Inteira:${divInteira}`)
+        exp=n1**n2
+        document.write(`</br> Exponenciação:${exp}`)
+        document.write(`</br> Os números são iguais!->(${n1==n2?("Correto"):("Incorreto")})`)
+        document.write(`</br> Os múmeros são diferentes!->(${n1!=n2?("Correto"):("Incorreto")})`)
+        document.write(`</br> Os números tem a mesma identidade->(${n1===n2||n2===n1?("Correto"):("Incorreto")})`)
+        document.write(`</br> Os dois números são positivos!->(${n1>0 & n2>0==!false?("Correto"):("Incorreto")})`)
+        document.write(`</br> Qual o maior número?${n1>n2?(n1):(n2)}`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005</title>
+    <style>
+        body{
+            background-color:#D8BFD8 ;
+            color: #FFF;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos em DOM</h1>
+    <p name="paragrafo">Aqui vai o resultado</p>
+    <p name="paragrafo">Aprendendo a usar <strong>DOM</strong></p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        msg=document.getElementById('msg')
+        msg.style.background="#000"
+        msg="Não Clique aqui"
+        document.write(msg)
+        document.getElementById('msg').innerText="Olá Mundo"
+        var p=document.getElementsByName('paragrafo')[1]
+        p.innerText=`GetElementByName`
+        div=window.document.querySelector('div#msg')
+        div.style.background="#333"
+    </script>
+</body>
+</html>
