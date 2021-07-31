@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        /*Geral*/
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        /*Interface*/
+        body{
+            width: 100%;
+            min-height: 100vh;
+            background-color: antiquewhite;
+        }
+
+        h1{
+            font: normal 27px Arial;
+            text-align: center;
+            margin: 20px auto;
+        }
+        
+        #layout{
+            width: 45vh;
+            height: 370px;
+            background-color: #8c52ff;
+            position: relative;
+            margin: 0 auto;
+        }
+        #left{
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+        }
+        #right-botao{
+            position: absolute;
+            left: 220px;
+            top: 197px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 30%;
+        }
+        #right-botao-menor{
+            position: absolute;
+            left: 235px;
+            top: -3px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 20%;
+        }
+
+        #monitor{
+            background-color:#4f0ed1;
+            height: 15vh;
+            width: 220px;
+        }
+        .botao{
+            background-color: #4f0ed1;
+            padding: 20px;
+            width:10px;
+            text-align: center;
+            border: 1px solid #5500ff; 
+            border-radius: 80px;
+            margin: 10px 10px 20px 10px;
+        }
+        .botao-menor{
+            background-color: #4f0ed1;
+            padding: 10px;
+            width:14px;
+            text-align: center;
+            border: 1px solid #5500ff; 
+            border-radius: 100px;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculadora de dois Números</h1>
+    <section id="layout">
+        <div id="monitor">
+        </div>
+        <section id="left">
+            <div class="botao" id="num1">
+                1
+            </div>
+            <div class="botao" id="num2">
+                2
+            </div>
+            <div class="botao" id="num3">
+                3
+            </div>
+            <div class="botao" id="num4">
+                4
+            </div>
+            <div class="botao" id="num5">
+                5
+            </div>
+            <div class="botao" id="num6">
+                6
+            </div>
+            <div class="botao" id="num7">
+                7
+            </div>
+            <div class="botao" id="num8">
+                8
+            </div>
+            <div class="botao" id="num9">
+                9
+            </div>
+        </section>
+        <section id="right-botao">
+            <div class="botao" id="ope=">
+                =
+            </div>
+            <div class="botao" id="num0">
+                0
+            </div>
+        </section>
+        <section id="right-botao-menor">
+            <div class="botao-menor" id="ope+">
+                +
+            </div>
+            <div class="botao-menor" id="ope-">
+                -
+            </div>
+            <div class="botao-menor" id="ope*">
+                *
+            </div>
+            <div class="botao-menor" id="ope/">
+                /
+            </div>
+        </section>
+    </section>
+</body>
+</html>
